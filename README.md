@@ -14,3 +14,22 @@ $ yarn add --dev jira-commit
 ## Usage
 
 You can use `jira-commit` like `git commit`
+  
+  
+With package.json
+```json
+"scripts":{
+  "cz":"jira-commit"
+}
+```
+
+```
+$ npm run cz -a 
+```
+
+Global use 
+
+```
+$ npm i -g jira-commit
+$ jira-commit -a
+```
