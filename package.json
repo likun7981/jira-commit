@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "a simple commit repo with cz-cli",
   "main": "index.js",
+  "bin": {
+    "jira-commit": "./index.js"
+  },
   "scripts": {
     "cz": "node index.js -a"
   },
