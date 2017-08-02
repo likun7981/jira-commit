@@ -1,5 +1,5 @@
 # jira-commit
-> a simple commit repo with cz-cli
+> a simple commit repo with cz-cli 
     
 
 [![npm version](https://img.shields.io/npm/v/jira-commit.svg?style=flat-square)](https://www.npmjs.org/package/jira-commit)
