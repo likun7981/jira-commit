@@ -14,6 +14,8 @@ bootstrap({
   }
 });
 
+process.env.__JIRA_COMMIT_USE = 'true'
+
 // Don't print error stack trace if commit failed
 process.on('uncaughtException', (err) => {
   console.error(err.message || err);

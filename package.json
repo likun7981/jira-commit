@@ -1,10 +1,11 @@
 {
   "name": "jira-commit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a simple commit repo with cz-cli",
   "main": "index.js",
   "bin": {
-    "jira-commit": "./index.js"
+    "jira-commit": "./index.js",
+    "jira-commit-guard": "./jira-commit-guard.js"
   },
   "scripts": {
     "cz": "node index.js -a"
@@ -21,6 +22,8 @@
   },
   "homepage": "https://github.com/likun7981/jira-commit#readme",
   "dependencies": {
+    "boxen": "^1.2.2",
+    "chalk": "^2.3.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog-simple": "^0.0.1"
   }
