@@ -1,8 +1,8 @@
-// #!/usr/bin/env node
+#!/usr/bin/env node
 
 const boxen = require("boxen");
 const chalk = require("chalk");
-if (!process.env.JIRA_COMMIT_USE) {
+if (!process.env.__JIRA_COMMIT_USE) {
   const yourCommitName = process.argv.slice(2)[0] || "cz";
   console.log(
     boxen(
@@ -17,4 +17,4 @@ if (!process.env.JIRA_COMMIT_USE) {
   );
   process.exit(1);
 }
-delete process.env.JIRA_COMMIT_USE;
+delete process.env.__JIRA_COMMIT_USE;
