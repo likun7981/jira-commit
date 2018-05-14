@@ -41,3 +41,5 @@ You can use `gcz-guard` to prevent default `git commit` with git hook `pre-commi
   "precommit": "gcz-guard"
 }
 ```
+
+You can configure conventional by `package.json`-`gczConventional` property
