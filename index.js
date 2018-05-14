@@ -6,11 +6,14 @@ const bootstrap = require('commitizen/dist/cli/git-cz').bootstrap;
 
 const isGlobalInstall = existSync(path.join(__dirname, './node_modules/commitizen'));
 
+const pkg = require('read-pkg').sync(process.cwd())
+
+const czConventional = pkg.gczConventional || 'cz-conventional-changelog-simple'
 
 bootstrap({
   cliPath: isGlobalInstall ? path.join(__dirname, './node_modules/commitizen') : path.join(__dirname, '../commitizen'),
   config: {
-    path: 'cz-conventional-changelog-simple'
+    path: czConventional
   }
 });
 

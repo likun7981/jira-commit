@@ -8,28 +8,36 @@
 
 ## install
 ```
-$ yarn add --dev jira-commit
+$ yarn add --dev gcz
 ```
 
 ## Usage
 
-You can use `jira-commit` like `git commit`
+You can use `gcz` like `git commit`
   
   
 With package.json
 ```json
 "scripts":{
-  "cz":"jira-commit"
+  "cz":"gcz"
 }
 ```
 
 ```
-$ npm run cz -a 
+$ npm run cz -a
 ```
 
 Global use 
 
 ```
-$ npm i -g jira-commit
-$ jira-commit -a
+$ npm i -g gcz
+$ gcz -a
+```
+
+You can use `gcz-guard` to prevent default `git commit` with git hook `pre-commit`([husky](https://github.com/typicode/husky))
+
+```json
+"script":{
+  "precommit": "gcz-guard"
+}
 ```
