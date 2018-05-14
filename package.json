@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": {
     "gcz": "./index.js",
-    "gcz-guard": "./jira-commit-guard.js"
+    "gcz-guard": "./gcz-guard.js"
   },
   "scripts": {
     "cz": "node index.js -a"

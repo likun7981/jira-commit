@@ -8,7 +8,7 @@ const isGlobalInstall = existSync(path.join(__dirname, './node_modules/commitize
 
 const pkg = require('read-pkg').sync(process.cwd())
 
-const czConventional = pkg.gczConventional || 'cz-conventional-changelog-simple'
+const czConventional = pkg.gcz ? `cz-conventional/${pkg.gcz}.js` : 'cz-conventional'
 
 bootstrap({
   cliPath: isGlobalInstall ? path.join(__dirname, './node_modules/commitizen') : path.join(__dirname, '../commitizen'),
