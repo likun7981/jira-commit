@@ -1,6 +1,6 @@
 {
   "name": "gcz",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a simple commit repo with cz-cli",
   "main": "index.js",
   "bin": {
@@ -25,7 +25,7 @@
     "boxen": "^1.2.2",
     "chalk": "^2.3.0",
     "commitizen": "^2.9.6",
-    "cz-conventional": "^0.0.1",
+    "cz-conventional": "^0.0.2",
     "read-pkg": "^3.0.0"
   }
 }
