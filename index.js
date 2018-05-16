@@ -7,9 +7,10 @@ const bootstrap = require('commitizen/dist/cli/git-cz').bootstrap;
 const pkg = require('read-pkg').sync(process.cwd())
 
 const czConventional = require.resolve(pkg.gcz ? `cz-conventional/${pkg.gcz}.js` : 'cz-conventional')
+const isGlobalInstall = existSync(path.join(__dirname, './node_modules/commitizen'));
 
 bootstrap({
-  cliPath: require.resolve('commitizen'),
+  cliPath: isGlobalInstall ? path.join(__dirname, './node_modules/commitizen') : path.join(__dirname, '../commitizen'),
   config: {
     path: czConventional
   }
